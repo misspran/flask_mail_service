@@ -56,6 +56,7 @@ JSON request body schema in that POST request to be:
    "mailgun": true // optional boolean value to configure for email to be sent by Mailgun. Otherwise defaults to sendgrid.
 }
 ```
+NOTE: The from email will HAVE to be from a registered email on Sendgrid and a registered domain on Mailgun. There will be a 403 or 401 error if otherwise. 
 
 All fields are required and in string format with the exception of "mailgun" only to be passed if intended to switch email sending service to Mailgun instead of Sendgrid. 
 
